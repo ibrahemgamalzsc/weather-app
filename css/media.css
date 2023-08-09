@@ -1,0 +1,47 @@
+@media only screen and (max-width: 992px) {
+    .navbar-nav {
+        background-color: #2D303D;
+        margin-top: 1rem;
+        border-radius: 1rem;
+    }
+
+    .nav-item {
+        position: relative;
+        height: 5rem;
+        margin: 0;
+
+    }
+
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: .1rem;
+        background-color: #3e4255;
+    }
+
+
+
+    .nav-item:hover {
+        border: none;
+    }
+
+
+    .forecast {
+        width: 100%;
+    }
+
+    #forecast-wrapper{
+       flex-direction: column;
+
+       height: auto;
+    }
+
+    .forecast-content:not(:first){
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
